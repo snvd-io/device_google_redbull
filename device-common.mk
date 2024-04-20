@@ -1046,3 +1046,5 @@ include device/google/gs-common/thermal/thermal_hal/device.mk
 # Pixel Logger
 include hardware/google/pixel/PixelLogger/PixelLogger.mk
 #################################################################################
+
+PRODUCT_PROPERTY_OVERRIDES := $(filter-out ro.vendor.build.svn=% , $(PRODUCT_PROPERTY_OVERRIDES))
